@@ -1,12 +1,9 @@
 {
-  "build": [
-    {
-      "src": "index.ts"
-    }
+  "framework": [
+    "bun",
+    "ElysiaJS"
   ],
-  "routes":[
-    {
-      "src": "/(.*)"
-    }
+  "rewrites":  [
+    {"source": "/(.*)", "destination": "/"}
   ]
 }
