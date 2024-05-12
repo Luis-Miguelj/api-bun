@@ -1,0 +1,51 @@
+GET http://localhost:3333
+Content-Type: application/json
+
+###
+
+POST http://localhost:3333
+Content-Type: application/json
+
+{
+  "name": "rosane",
+  "email": "rs@gmail.com",
+  "password": "123"
+}
+
+###
+//Filtro do Login
+POST http://localhost:3333/login/
+Content-Type: application/json
+
+{
+  "email": "rs@gmail.com",
+  "password": "123"
+}
+
+###
+DELETE http://localhost:3333/logout/663e8b424dd21154961d5e8d
+
+###
+
+POST http://localhost:3333/posts/663e8b424dd21154961d5e8d
+Content-Type: application/json
+
+{
+  "title": "Novo livro da lady gaga",
+  "description": "Conteudo de teste para o negocio de postagens, mas o livro da lady gaga é de mais! e super caro, o irmão da minha namorada amou!"
+}
+
+###
+
+PUT http://localhost:3333/posts/663e8b424dd21154961d5e8d/664002114291970455b9ebad
+Content-Type: application/json
+
+{
+  "title": "Novo livro da Taylor Swift",
+  "description": "Um mergulho na jornada de Taylor Swift, cheio de inspiração e reflexão sobre a vida e a arte. Minha filha adorou, e o irmão dela está lendo."
+}
+
+###
+
+GET http://localhost:3333/posts
+Content-Type: application/json
