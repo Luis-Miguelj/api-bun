@@ -1,9 +1,0 @@
-{
-  "framework": [
-    "bun",
-    "ElysiaJS"
-  ],
-  "rewrites":  [
-    {"source": "/(.*)", "destination": "/"}
-  ]
-}
