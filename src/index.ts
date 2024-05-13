@@ -1,5 +1,5 @@
 import { Elysia, t } from "elysia";
-import {cors} from '@elysiajs/cors'
+import { cors } from '@elysiajs/cors'
 import prisma from "../lib/prisma";
 
 const app = new Elysia()
